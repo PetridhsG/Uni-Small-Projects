@@ -1,0 +1,1175 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&family=Aleo:ital,wght@0,100..900;1,100..900&family=Asap:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*---------------------- ELEMENTS IN EVERY PAGE ---------------------- */
+
+/* Sets up a grid layout with 12 columns for the body and applies a gradient background */
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    font-family: sans-serif;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(86,16,16,1) 0%, rgba(117,24,24,1) 50%, rgba(86,16,16,1) 100%);
+}
+
+/* Ensures all child elements of the body span the entire grid */
+body > * {
+    grid-column: 1 / 13;
+}
+
+/* Adds margin around the main content */
+main {
+    margin: 2em 1em 1em 1em;
+}
+
+/* Creates a flex container to center child elements both vertically and horizontally */
+.center-content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles the h1 elements with custom font, size, color, and a shadow effect */
+h1 {
+    text-align: center;
+    font-family: "Asap";
+    font-size: 2.5em;
+    color: #ffffff;
+    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+    margin: 0.2em 0em 0em 0.4;
+}
+
+/* Adds decorative horizontal lines before and after each h1 element */
+h1::before, h1::after {
+    background: rgb(86, 16, 16);
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Sets the color for star ratings */
+.stars {
+    color: rgb(25, 202, 253);
+}
+
+/*---------------------- HEADER ---------------------- */
+
+/* Styles the header for every page */
+header {
+    background: rgb(86, 16, 16);
+    background: linear-gradient(90deg, rgba(86,16,16,1) 0%, rgba(117,24,24,1) 50%, rgba(86,16,16,1) 100%);
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+/* Styles the logo image within the header */ 
+header img { 
+    width: 20em;
+    padding: 0.4em 0em 0.2em 1em;
+}
+
+/*---------------------- NAV ---------------------- */
+
+/* Styles the navigation area within the header */
+nav {
+    border-bottom: 1px solid white;
+}
+
+/* Styles the unordered list inside the navigation */
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0em 1em;
+}
+
+/* Styles individual list items in the navigation */
+nav ul li {
+    padding: 1em 0.8em;
+}
+
+/* Styles the links within the header */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font: bold 1.2em "Varela Round";
+    transition: 0.3s ease-in-out;
+    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Adds a hover effect to links in the header */
+nav a:hover {
+    color: rgb(25, 202, 253);
+    transition: 0.3s ease-in-out;
+}
+
+/* Styles links when clicked (active state) */
+nav a:active {
+    color: rgb(24, 164, 203);
+    transition: 0.3s ease-in-out;
+}
+
+/*---------------------- ASIDE ---------------------- */
+
+/* Styles the aside element with a flex container and centered text */
+aside {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    font-family: "Varela Round";
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* Adds margin to the form inside the aside */
+aside > form {
+    margin-top: 2em;
+}
+
+/* Styles labels within the form inside the aside */
+aside > form > label {
+    font-size: 1em;
+    font-weight: bolder;
+    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles input fields inside the form within the aside */
+aside > form > input {
+    width: fit-content;
+    padding: 0.2em;
+    margin-top: 0.4em;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-family: "Varela Round";
+    font-size: 0.8em;
+}
+
+/* Styles the buttons inside the aside */
+aside > button {
+    margin: 0.8em;
+    padding: 0.5em;
+    background-color: #f5f5dc;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-family: "Varela Round";
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+/* Adds a hover effect to buttons inside the aside */
+aside > button:hover {
+    background-color: rgb(25, 202, 253);
+    transition: 0.3s ease-in;
+}
+
+/* Styles the h3 elements inside the aside */
+aside > h3 {
+    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+    font-size: 1em;
+}
+
+/* Styles the "Contact Us" button inside the aside */
+aside #contact-us-btn {
+    font-size: 0.8em;
+    border: 1px solid transparent;
+    background-color: #f5f5dc;
+    border-radius: 20px;
+    padding: 0.4em;
+    width: 25%;
+}
+
+/* Styles the link inside the "Contact Us" button */
+aside #contact-us-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Adds a hover effect to the "Contact Us" button */
+aside #contact-us-btn:hover {
+    background-color: rgb(25, 202, 253);
+    transition: 0.3s ease-in;
+}
+
+/* Styles images inside links within the aside */
+aside > a > img {
+    margin-top:1em;
+    width:10em;
+}
+
+/*---------------------- FOOTER ---------------------- */
+
+/* Styles the footer for every page */
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgb(28, 28, 28) 50%, rgba(17,17,17,1) 100%);
+    font-family: "Rubik";
+    color: #ffffff;
+    text-align: center;
+}
+
+footer img { 
+    max-width:100%;
+}
+
+/* Styles the h2 element within the footer */
+footer h2 {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Styles the h3 element within the footer */
+footer h3 {
+    border-bottom: 1px solid #5f5f5f;
+    font-weight: lighter;
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Styles the h5 element within the footer */
+footer h5 {
+    color: #5a5a5a;
+    font-style: italic;
+}
+
+/* Styles paragraphs within the footer */
+footer p {
+    border-bottom: 1px solid #5f5f5f;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Styles the contact section within the footer */
+#contact {
+    margin: 0 1em;
+}
+
+/* Styles paragraphs within the contact section */
+#contact p {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    line-height: 1.6em;
+}
+
+/* Styles links within the contact section */
+#contact a {
+    text-decoration: none;
+    font-weight: lighter;
+    color: #ffffff;
+    margin-top: 0.2em;
+    font-size: 0.8em;
+}
+
+/* Adds hover effect for links in the contact section */
+#contact a:hover {
+    color: rgb(25, 202, 253);
+    transition: 0.3s;
+}
+
+/* Styles images inside contact links */
+#contact a img { 
+    width:2.5em;
+    vertical-align: middle;
+    margin-right: 0.3em;
+}
+
+/* Styles the container for partner logos */
+#partners #partners-logos {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Styles partner images for size and margin */
+#partners img { 
+    width:4em;
+    margin: 0.4em;
+    transition: 0.4s;
+}
+
+/* Adds scaling effect on hover for partner images */
+#partners img:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+/* Removes text decoration for partner and social media links */
+#partners a {
+    text-decoration: none;
+}
+
+/* Styles the social media section within the footer */
+#social-media {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/* Styles the container for social media logos */
+#social-media #media-logos {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Styles social media images */
+#social-media img { 
+    width:2em;
+    margin: 0.2em;
+    transition: 0.4s;
+}
+
+/* Adds scaling effect on hover for social media images */
+#social-media img:hover { 
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+/* Removes text decoration for social media links */
+#social-media a {
+    text-decoration: none;
+}
+
+/*---------------------- MAIN INDEX ---------------------- */
+
+/* Styles the introduction section with background, padding, and border */
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Manjari";
+    text-align: center;
+    background-color: #f5f5dc;
+    width: 80%;
+    padding: 2em;
+    border: 2px solid black;
+    border-radius: 10px 100px / 120px;
+}
+
+/* Styles the h2 element in the intro section */
+#intro h2 {
+    color: black;
+    font-family: "Asap";
+}
+
+/* Styles the grid layout for the news section */
+#news {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25em, auto));
+}
+
+/* Styles the h1 element in the news section */
+#news h1 {
+    grid-column: 1 / -1;
+}
+
+/* Styles individual news article sections */
+.news-article {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-self: center;
+    background-color: #fffffe;
+    font-family: "Manjari";
+    width: 20em;
+    margin: 1em;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+/* Styles the h3 element within news articles */
+.news-article h3 {
+    font-family: "Roboto Condensed";
+}
+
+/* Styles the hover effect for news articles */
+.news-article:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    transform: scale(1.03);
+    transition: 0.4s;
+}
+
+/* Styles the images in news articles */
+.news-article img {
+    width:20em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid black;
+}
+
+/* Styles links within news articles */
+.news-article a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Styles text inside links in news articles */
+.news-article a p, .news-article a h3 {
+    padding-left: 0.3em;
+    margin: 0.5em;
+}
+
+/* Styles the trust-us section */
+#trust-us {
+    color: white;
+    font-family: "Manjari";
+    margin: 1em;
+    font-size: 1em;
+}
+
+/* Styles the reviews container */
+#reviews {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, auto));
+}
+
+/* Styles individual review sections */
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Manjari";
+    margin: 1em;
+}
+
+/* Styles images within reviews */
+.review img { 
+    margin-bottom: 1em;
+    width: 10em;
+    border-radius: 100%;
+    border: 0.15em solid rgb(25, 202, 253);
+}
+
+/* Styles the h3 element in reviews */
+.review h3 {
+    margin: 0;
+}
+
+/* Styles the h5 element in reviews */
+.review h5 {
+    margin: 0;
+    font-size: 0.7em;
+    text-decoration: underline;
+}
+
+/* Styles paragraphs in reviews */
+.review p {
+    font-weight: 110;
+}
+
+/* Add margin to stars for every review */
+.review p + p {
+    margin: 0;
+}
+
+/*---------------------- MAIN ABOUT US ---------------------- */
+
+/* Styles the 'about-us' section for layout and alignment */
+#about-us {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25em, auto));
+}
+
+/* Styles the div within 'about-us' for color, width, and padding */
+#about-us > div {
+    grid-column: 1 / -1;
+    color: white;
+    font-family: "Manjari";
+    width: auto-fill;
+}
+
+/* Underlines the h2 element within 'about-us' */
+#about-us h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Styles paragraphs inside the div in 'about-us' for text alignment */
+#about-us div p {
+    text-align: center;
+}
+
+/* Styles articles within 'about-us' for background, size, and border */
+#about-us article {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin: 1em;
+    width: 20em;
+    padding: 1em;
+    background-color: #f5f5dc;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: "Asap";
+}
+
+/* Styles images within the 'about-us' section for consistent width */
+#about-us img { 
+    width:10em;
+}
+
+/* Styles general paragraphs in 'about-us' for text alignment and line spacing */
+#about-us p {
+    text-align: left;
+    line-height: 1.2em;
+}
+
+/*---------------------- MAIN CATEGORIES---------------------- */
+
+/* Styles the courses container */
+#courses-container {
+    margin-bottom: 12.2em;
+}
+
+/* Configures images within the courses container */
+#courses-container img {  
+    width:15em;
+    transition: 0.4s;
+    opacity: 0.5;
+}
+
+/* Adds hover effect for images in the courses container */
+#courses-container img:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    opacity: 1;
+}
+
+/* Styles the unordered list within the courses container */
+#courses-container > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, auto));
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles individual course items */
+.course-item {
+    justify-self: center;
+    margin: 1em;
+    padding: 0;
+    width: 65%;
+    position: relative;
+}
+
+/* Styles the nested list within course items */
+.course-item > ul {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    visibility: hidden;
+    z-index: 1;
+    min-width: 12em;
+    border: 3px solid #1b1b1b;
+}
+
+/* Shows dropdown on hover for course items */
+.course-item:hover > ul,
+.course-item ul:hover {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s;
+    visibility: visible;
+}
+
+/* Styles individual dropdown list items within course items */
+.course-item ul > li {
+    padding: 0.3em;
+    padding-left: 0.8em;
+}
+
+/* Styles links within the course dropdown */
+.course-item ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-family: "Manjari";
+    display: block;
+    padding: 0.5em 0;
+    font-size: 1em;
+}
+
+/* Highlights dropdown list items on hover */
+.course-item > ul > li:hover {
+    background-color: #2a2a2a;
+    transition: background-color 0.2s ease-in;
+}
+
+/* Highlights specific course links */
+#probability-theory-link, #python-link {
+    color: rgb(25,202,253);
+    font-style: italic;
+}
+
+/*---------------------- MAIN PROBABILITY-THEORY/PYTHON ---------------------- */
+
+/* Styles the book-lecture-container to have white text */
+.book-lecture-container {
+    color: white;
+}
+
+/* Styles the h2 in the section of the book-lecture-container */
+.book-lecture-container > section > h2 {
+    margin-bottom: 0;
+    text-align: center;
+    font-family: "Manjari";
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+/* Styles individual book-lecture-items with border, layout, and font */
+.book-lecture-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid rgb(25,202,253);
+    border-top: 3px solid rgb(25,202,253);
+    border-radius: 0.3em;
+    margin: 2em;
+    font-family: "Aleo";
+}
+
+/* Styles images within the book-lecture-items */
+.book-lecture-item img { 
+    width: 20em;
+    margin: 1em;
+    border: 3px solid rgb(25,202,253);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles the container for the details section in book-lecture-items */
+.details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+/* Styles headings h3 and h5 inside book-lecture-items */
+.details-container > h3, .details-container > h5 {
+    font-style: italic;
+    margin: 0;
+}
+
+/* Adds spacing to h3 inside book-lecture-items */
+.details-container > h3 {
+    margin-top: 0.5em;
+}
+
+/* Styles h5 with a specific font size and color in book-lecture-items */
+.details-container > h5 {
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    color: rgb(25,202,253);
+}
+
+/* Styles links inside the details-container */
+.details-container > a {
+    width: 7em;
+    margin: 0.5em 0em 1.5em 0.4em;
+    padding: 0.5em;
+    text-align: center;
+    font-family: "Manjari";
+    text-decoration: none;
+    border: 3px solid #1b1b1b;
+    background-color: #333;
+    color: white;
+    font-style: italic;
+    transition: 0.3s ease-in-out;
+}
+
+/* Adds hover effect to the links in the details-container */
+.details-container a:hover {
+    background-color: #515151;
+    transition: 0.3s ease-in-out;
+}
+
+/*---------------------- MAIN PY GAME/PROBABILITY LECTURE ---------------------- */
+
+/* Styles the return-button parent container */
+.return-button {
+    padding: 0.15em 0.5em;
+    font-family: "Asap";
+    font-size: 2em;
+    text-decoration: none;
+    border: 3px solid #1b1b1b;
+    border-radius: 3px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.4s;
+}
+
+/* Styles the back-to-table-button parent container */
+.back-to-table-button {
+    width: 12em;
+    padding: 0.4em;
+    font-family: "Asap";
+    text-decoration: none;
+    font-size: 1em;
+    border: 3px solid #1b1b1b;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.4s;
+}
+
+/* Styles the book-lecture-intro parent container */
+.book-lecture-intro .book-lecture-item {
+    border: none;
+    color: white;
+}
+
+/* Styles the chapters-container parent container */
+.book-lecture-chapters-container {
+    color: white;
+    font-family: "Nunito";        
+}
+
+/* Styles the table-of-content parent table */
+#table-of-content tr, td, th {
+    border-bottom: 1px solid #fff; 
+}
+
+/* Styles the table-of-content parent header cells */
+#table-of-content th {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Styles the table-of-content parent links */
+#table-of-content a {
+    text-decoration: none;
+    border-bottom: transparent;
+    color: rgb(25,202,253);
+}
+
+/* Styles the first column in the table-of-content parent table */
+#table-of-content td:first-child {
+    border-right: 1px solid #fff;
+}
+
+#table-of-content th:first-child {
+    border-right: 1px solid #fff;
+}
+
+/* Styles the book-lecture-chapter parent container */
+.book-lecture-chapter {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles the h2 element within book-lecture-chapter parent */
+.book-lecture-chapter > h2 {
+    width: 50%;
+    font-family: "Asap";
+    font-size: 1.5em;
+    color: white;
+    background: rgb(86, 16, 16);
+    padding: 0.4em;
+    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles the details element inside book-lecture-chapter parent */
+.book-lecture-chapter > details > summary {
+    font-style: italic;
+    font-family: "Roboto Condensed";
+    text-decoration: underline;
+}
+
+/* Aligns text in details for book-lecture-chapter parent */
+.book-lecture-chapter > details {
+    text-align: center;
+}
+
+/* Styles the list inside details of book-lecture-chapter parent */
+.book-lecture-chapter > details > ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    font-family: "Roboto Condensed";
+}
+
+/* Styles list items inside details for book-lecture-chapter parent */
+.book-lecture-chapter > details > ul > li {
+    margin-right: 0.5em;
+    font-family: "Nunito";
+    color: rgb(25,202,253);
+}
+
+/* Adds separator for list items in details under book-lecture-chapter parent */
+.book-lecture-chapter > details > ul > li::after {
+    content: ', '; 
+}
+
+/* Removes separator for the last list item in details for book-lecture-chapter parent */
+.book-lecture-chapter > details > ul > li:last-child::after {
+    content: ''; 
+}
+
+/* Aligns paragraphs to the left in book-lecture-chapter parent */
+.book-lecture-chapter p {
+    text-align: left;
+    margin-left: 1em;
+}
+
+/* Styles images in figure inside book-lecture-chapter parent */
+.book-lecture-chapter > figure > img {  /*--- image-tbc ---*/
+    width:15em;
+    border: 2px solid rgb(25,202,253);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles figure captions in book-lecture-chapter parent */
+.book-lecture-chapter > figure > figcaption {
+    font-style: italic;
+}
+
+/* Styles iframe elements inside book-lecture-chapter parent */
+.book-lecture-chapter iframe {   /*--- image-tbc ---*/
+    margin: 1em;
+    padding: 0;
+    width: 20em;
+    height: 10em;
+    box-sizing: border-box;
+    border: 2px solid rgb(25,202,253);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*---------------------- TABLET ----------------------*/
+@media (min-width: 683px) and (max-width: 1020px) {
+
+    /* Make all elements in the body span the full width */
+    body > * {
+        grid-column: 1 / 13;
+    }
+    
+    /* Style for header on tablet: spans the entire grid */
+    header {
+        grid-column: 1 / 13;
+        grid-row:1;
+    }
+
+    /* Style for navigation: occupies the first 3 columns */
+    nav {
+        grid-column: 1/ 4;
+        grid-row:2;   
+        border-right:1px solid white;
+    }
+
+    /* Style for aside section: occupies the first 3 columns */
+    aside {
+        grid-column: 1 / 4;
+        grid-row:3;
+        border-right:1px solid white; 
+        border-bottom:none; 
+    }
+    
+    /* Main content section: spans from the 4th column to the 13th */
+    main {     
+        grid-column: 4 / 13;
+        grid-row: 2/4;    
+    }
+    
+    /* Footer: spans the entire width of the grid */
+    footer{
+        grid-column: 1/ 13;
+        grid-row:4;
+    }
+
+    /* Styles for navigation list: changes to column layout */
+    nav ul {
+        flex-direction: column; 
+        justify-content: flex-start; 
+        margin-top:1em; 
+    }
+
+    /* Styles for contact section: sets flex direction to column */
+    #contact {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    /* Styles for contact info container: sets flex direction to row */
+    #contact #contact-info {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    /* Styles for each contact info item: adds margin */
+    #contact #contact-info .contact-info-item {
+        margin:1em;
+    }
+
+    /* Styles images in figure inside book-lecture-chapter parent */
+    .book-lecture-chapter > figure > img {  /*--- image-tbc ---*/
+        width: 30em;
+    }
+    
+    /* Styles iframe elements inside book-lecture-chapter parent */
+    .book-lecture-chapter iframe {   /*--- image-tbc ---*/
+        width: 30em;
+        height: 15em;
+    }
+
+}
+
+
+/*---------------------- DESKTOP ----------------------*/
+@media (min-width: 1020px) {
+    /* Make all elements in the body span the full grid width */
+    body > * {
+        grid-column: 1 /13;
+    }
+    
+    /* Style for header on desktop: spans the entire grid */
+    header {
+        grid-column: 1/13;
+        grid-row:1;
+    }
+    
+    /* Main content: spans from the 2nd to the 11th column */
+    main {     
+        grid-column: 2/11;
+        grid-row:2;
+    }
+    
+    /* Navigation: occupies the first column */
+    nav {
+        grid-column: 1/2;
+        grid-row:2; 
+        border-bottom:none; 
+    }
+    
+    /* Aside section: occupies the last 2 columns (11th and 12th) */
+    aside {
+        grid-column: 11/13;
+        grid-row:2;
+        border-bottom:none; 
+    }
+    
+    /* Footer: spans the entire width of the grid */
+    footer{
+        grid-column: 1/13;
+        grid-row:3;
+    }
+    
+    /* Navigation list: adds left padding and stacks items vertically */
+    nav ul {
+        padding-left: 0.2em;
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-end; 
+    }
+
+    /* Padding adjustment for the nav section */
+    nav {
+        padding-top: 10em;
+        border-right: 1px solid white; 
+    }
+    
+    /* Aside section: adds a left border */
+    aside {
+        border-left: 1px solid white;
+    }
+
+    /* Intro section: sets width to 50% */
+    #intro{
+        width: 50%;
+    }
+
+    /* Trust us section: aligns text to the left */
+    #trust-us{
+        text-align: left;
+    }
+
+    /* Contact section layout: flex column for stacking */
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Partners section: stacks items vertically and centers them */
+    #partners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Social media section layout: flex column and center items */
+    #social-media {     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: end;
+    }
+
+    /* Adds space on top of social media heading */
+    #social-media h5{
+        margin-top:12em;
+    }
+
+    /* Footer layout: flex row, aligns items to the start, and justifies content between */
+    footer { 
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    /* Book lecture items layout: flex row for horizontal alignment */
+    .book-lecture-item {
+        flex-direction: row;
+    }
+
+    /* Details container inside book lecture items: aligns items to the left */
+    .details-container {
+        display:flex;
+        align-items: left;
+    }
+
+    /* Social media heading style: adds margin to the right */
+    #social-media h5 {
+        margin-right: 2em;
+    }
+
+    #partners a img { 
+        width:6em;
+    }
+
+    /* Styles images in figure inside book-lecture-chapter parent */
+    .book-lecture-chapter > figure > img {  /*--- image-tbc ---*/
+        width: 40em;
+    }
+    
+    /* Styles iframe elements inside book-lecture-chapter parent */
+    .book-lecture-chapter iframe {   /*--- image-tbc ---*/
+        width: 40em;
+        height: 20em;
+    }
+
+}
+
+/* General styles for the sign-up form */
+#sign-up-form {
+    font-family: "Manjari";
+    color: white;
+}
+
+/* Styles the legend inside the form */
+#sign-up-form legend {
+    color: rgb(25,202,253);
+    text-align: center;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+/* Ensures inputs, textarea, and select elements use the same font */
+#sign-up-form input, #sign-up-form textarea, #sign-up-form select {
+    font-family: "Manjari";
+}
+
+/* Styles for fieldset element inside the form */
+#sign-up-form fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25em;
+    margin-bottom: 1em;
+    padding: 0 0 1em 0;
+    border-radius: 5px;
+    border: 1.5px solid white;
+    border-image: initial;
+}
+
+/* Styles for radio options inside the form */
+.radio-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 0.4em;
+}
+
+/* Adjusts the size of radio input buttons */
+.radio-option input {
+    width: 1px;
+}
+
+/* Styles labels for radio buttons */
+.radio-option label {
+    display: flex;
+    font-size: 1em;
+    color: white;
+    line-height: 1;
+}
+
+/* General label styling in the form */
+#sign-up-form label {
+    display: block;
+    margin-top: 0.5em;
+}
+
+/* Styles inputs, select, and textarea elements */
+#sign-up-form input, #sign-up-form select, #sign-up-form textarea {
+    width: 25em;
+    padding: 0.5em;
+    margin-top: 0.2em;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+/* Styles the submit button */
+#sign-up-form button {
+    width: 15em;
+    padding: 0.5em;
+    border-radius: 4px;
+    background-color: #f5f5dc;
+    color: black;
+    font-family: "Varela Round";
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+/* Adjusts checkbox input size */
+#sign-up-form input[type="checkbox"] {
+    width: auto;
+}
+
+/* Changes button color on hover */
+#sign-up-form button:hover {
+    background-color: rgb(25, 202, 253);
+    transition: 0.3s ease-in;
+}
+
+/* Highlights invalid inputs with a red border */
+#sign-up-form input:invalid {
+    border: 2px solid red;
+}
+
+/* Highlights valid inputs with a green border */
+#sign-up-form input:valid {
+    border: 2px solid green;
+}

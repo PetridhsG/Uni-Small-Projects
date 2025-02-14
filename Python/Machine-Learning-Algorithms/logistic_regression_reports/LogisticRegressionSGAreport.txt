@@ -1,0 +1,23 @@
+Features:2000
+Data Length:2000 of total 25000.
+Data Percentage:8.0%.
+
+Training Metrics for LogisticRegressionSGA:
+              precision    recall  f1-score   support
+
+           0       0.49      0.50      0.49       984
+           1       0.51      0.50      0.50      1016
+
+    accuracy                           0.50      2000
+   macro avg       0.50      0.50      0.50      2000
+weighted avg       0.50      0.50      0.50      2000
+
+Testing Metrics for LogisticRegressionSGA:
+              precision    recall  f1-score   support
+
+           0       0.97      0.97      0.97       980
+           1       0.98      0.98      0.98      1020
+
+    accuracy                           0.97      2000
+   macro avg       0.97      0.97      0.97      2000
+weighted avg       0.97      0.97      0.97      2000

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Learning Hub</title>
+        <link href="../img/logos/logo-icon.png" rel="shortcut icon" type="image/png" />
+        <link href="../style/style.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html"><img src="../img/logos/header-logo.png" alt="Learning Hub"></a>  
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="categories.html">Courses</a>
+                </li>
+                <li>
+                    <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="sign-up.html">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+
+        <aside>
+            <form>
+                <label>Subscribe to our Newsletter:</label>
+                <input placeholder="someone@example.com" >
+            </form>
+            <button>Subscribe</button>
+            
+            <h3>Want to send us an email?</h3>
+            <div id="contact-us-btn">
+                <a href="mailto:contact@example.com">Contact</a>
+            </div>
+
+            
+            <a href="https://shorturl.at/bcZfm" target="_blank">
+                <img src="../img/coursera-ad.png " alt="AD"  
+                > 
+            </a>  
+
+        </aside>
+
+        <main>
+            <h1>Sign Up</h1>
+            <div class="center-content">
+                <form id="sign-up-form" action="#" method="POST" >
+                    
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="johndoe@email.com" autocomplete="email" required>
+            
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" placeholder="Some Street 123, City, Country" required></textarea>
+            
+                        <label for="birthdate">Date of Birth:</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+            
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="1234567890" autocomplete="tel" required>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Account Details</legend>
+
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Choose a username" required>
+            
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" minlength="8" required>
+            
+                        <label for="confirm_password">Confirm Password:</label>
+                        <input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+                    </fieldset>
+            
+                    <fieldset>
+                        <legend>Communication Preferences</legend>
+
+                        <p>Please select your preferred communication method:</p>
+                        <div class="radio-option">
+                            <label for="email">Email</label>
+                            <input type="radio" id="radio-email" name="communication" value="email">
+                        </div>
+                        <div class="radio-option">
+                            <label for="sms">SMS</label>
+                            <input type="radio" id="sms" name="communication" value="sms">
+                        </div>
+                        <div class="radio-option">
+                            <label for="viber">Viber</label>
+                            <input type="radio" id="viber" name="communication" value="viber">
+                        </div>
+                        <div class="radio-option">
+                            <label for="whatsapp">WhatsApp</label>
+                            <input type="radio" id="whatsapp" name="communication" value="whatsapp">
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>User Profile</legend>
+
+                        <label for="education">Level of Education:</label>
+                        <input list="education-levels" type="text" id="education" name="education" autocomplete="off" required>
+                        <datalist id="education-levels">
+                            <option value="High School"></option>
+                            <option value="Bachelor's Degree"></option>
+                            <option value="Master's Degree"></option>
+                            <option value="PhD"></option>
+                        </datalist>
+            
+                        <label for="employment">Employment Status:</label>
+                        <select id="employment" name="employment" required>
+                            <option value="employed">Employed</option>
+                            <option value="unemployed">Unemployed</option>
+                            <option value="student">Student</option>
+                            <option value="retired">Retired</option>
+                        </select>
+            
+                        <label for="industry">Industry:</label>
+                        <input list ="industry-list" type="text" id="industry" name="industry" autocomplete="off" required>
+                        <datalist id="industry-list">
+                            <option value="IT"></option>
+                            <option value="HealthCare"></option>
+                            <option value="Education"></option>
+                        </datalist>
+            
+                        <label for="experience">Years of Work Experience:</label>
+                        <input type="number" id="experience" name="experience" min="0" max="50" required>
+            
+                        <label for="skills">List Your Key Skills:</label>
+                        <textarea id="skills" name="skills" placeholder="e.g., Programming, Data Analysis" required></textarea>
+                    </fieldset>
+                    
+                    <div class="center-content">
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <section id="contact">
+                <h2>Contact Us</h2>   
+                <div id="contact-info">    
+                    <div class="contact-info-item">
+                        <h3>Petridis Giannis</h3>
+                        <p>
+                            <a href="mailto:p3210167@aueb.gr">
+                                <img srcset="../img/responsive-img/200px/logos/mail-logo.png 240w,
+                                            ../img/responsive-img/300px/logos/mail-logo.png 320w,
+                                            ../img/responsive-img/500px/logos/mail-logo.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                            (max-width: 760px) 50vw,
+                                            380px 
+                                            " 
+                                    src="../img/responsive-img/200px/logos/mail-logo.png 240w"
+                                    alt="Mail-logo"  > 
+                                p3210167@aueb.gr
+                            </a>
+                            <a href="https://github.com/PetridhsG"> 
+                                <img srcset="../img/responsive-img/200px/logos/github-logo.png 240w,
+                                            ../img/responsive-img/300px/logos/github-logo.png 320w,
+                                            ../img/responsive-img/500px/logos/github-logo.png 765w"
+                                        sizes="(max-width: 320px) 100vw,
+                                        (max-width: 760px) 50vw,
+                                        380px  
+                                        " 
+                                    src="../img/responsive-img/200px/logos/github-logo.png 240w"
+                                    alt="Github-logo"  > 
+                                PetridhsG
+                            </a>
+                        </p>  
+                    </div>   
+                    <div class="contact-info-item">   
+                        <h3>Kefalas Dimitris</h3>
+                        <p>
+                            <a href="mailto:p3210167@aueb.gr">
+                                <img srcset="../img/responsive-img/200px/logos/mail-logo.png 240w,
+                                            ../img/responsive-img/300px/logos/mail-logo.png 320w,
+                                            ../img/responsive-img/500px/logos/mail-logo.png 765w"
+                                        sizes="(max-width: 320px) 100vw,
+                                        (max-width: 760px) 50vw,
+                                        380px  
+                                        "
+                                    src="../img/responsive-img/200px/logos/mail-logo.png 240w"
+                                    alt="Mail-logo"  > 
+                                p3210075@aueb.gr
+                            </a>
+                            <a href="https://github.com/dimkef29"> 
+                                <img srcset="../img/responsive-img/200px/logos/github-logo.png 240w,
+                                            ../img/responsive-img/300px/logos/github-logo.png 320w,
+                                            ../img/responsive-img/500px/logos/github-logo.png 765w"
+                                        sizes="(max-width: 320px) 100vw,
+                                        (max-width: 760px) 50vw,
+                                        380px  
+                                        "
+                                    src="../img/responsive-img/200px/logos/github-logo.png 240w"
+                                    alt="Github-logo"  > 
+                                dimkef29
+                            </a>
+                        </p>  
+                    </div>        
+                </div>                 
+            </section>
+
+            <section id="partners"> 
+                <h2>Partners</h2>
+                <div id="partners-logos">
+                    <a href="https://www.aueb.gr/"  target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/partners/aueb.png 240w,
+                                    ../img/responsive-img/300px/partners/aueb.png 320w,
+                                    ../img/responsive-img/500px/partners/aueb.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/partners/aueb.png 240w"
+                                    alt="Aueb-logo"  > 
+                    </a>
+                    <a href="https://www.stanford.edu/" target="_blank">
+                        <img srcset="../img/responsive-img/200px/partners/stanford.png 240w,
+                                    ../img/responsive-img/300px/partners/stanford.png 320w,
+                                    ../img/responsive-img/500px/partners/stanford.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/partners/stanford.png 240w"
+                                    alt="Stanford-logo"  > 
+                    </a>
+                    <a href="https://www.mit.edu/" target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/partners/mit.png 240w,
+                                    ../img/responsive-img/300px/partners/mit.png 320w,
+                                    ../img/responsive-img/500px/partners/mit.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/partners/mit.png 240w"
+                                    alt="MIT-logo"  > 
+                    </a>
+                    <a href="https://ntua.gr/el/" target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/partners/emp.png 240w,
+                                    ../img/responsive-img/300px/partners/emp.png 320w,
+                                    ../img/responsive-img/500px/partners/emp.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/partners/emp.png 240w"
+                                    alt="EMP-logo"  > 
+                    </a>
+                </div>            
+            </section>
+
+            <section id="social-media">
+                <h2>Social Media</h2>
+                <div id="media-logos">
+                    <a href="https://shattereddisk.github.io/rickroll/rickroll.mp4" target="_blank">
+                        <img srcset="../img/responsive-img/200px/logos/yt.png 240w,
+                                    ../img/responsive-img/300px/logos/yt.png 320w,
+                                    ../img/responsive-img/500px/logos/yt.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/logos/yt.png 240w"
+                                    alt="YT-logo"  > 
+                    </a>
+                    <a href="https://x.com/" target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/logos/x.png 240w,
+                                    ../img/responsive-img/300px/logos/x.png 320w,
+                                    ../img/responsive-img/500px/logos/x.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/logos/x.png 240w"
+                                    alt="X-logo"  > 
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/logos/insta.png 240w,
+                                    ../img/responsive-img/300px/logos/insta.png 320w,
+                                    ../img/responsive-img/500px/logos/insta.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/logos/insta.png 240w"
+                                    alt="Insta-logo"  > 
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/logos/fb.png 240w,
+                                    ../img/responsive-img/300px/logos/fb.png 320w,
+                                    ../img/responsive-img/500px/logos/fb.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/logos/fb.png 240w"
+                                    alt="Fb-logo"  > 
+                    </a>
+                    <a href="https://discord.com/" target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/logos/disc.png 240w,
+                                    ../img/responsive-img/300px/logos/disc.png 320w,
+                                    ../img/responsive-img/500px/logos/disc.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/logos/disc.png 240w"
+                                    alt="Discord-logo"  >
+                    </a>    
+                </div>     
+                <h5>&#169;2024, AUEB Project. All Rights Reserved.</h5>
+            </section>          
+        </footer>
+        <script type="text/javascript" src="../js/script.js"></script>
+    </body>
+</html>

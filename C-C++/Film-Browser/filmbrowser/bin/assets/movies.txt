@@ -1,0 +1,80 @@
+MOVIE 
+Inception
+2010
+Leonardo DiCaprio,Joseph Gordon-Levitt,Elliot Page,x
+Christopher Nolan,x
+Action,Adventure,Sci-Fi,x
+148
+88
+A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.,but his tragic past may doom the project and his team to disaster.
+inception
+MOVIE 
+Interstellar
+2014
+Matthew McConaughey,Anne Hathaway,Jessica Chastain,x
+Christopher Nolan,x
+Adventure,Drama,Sci-Fi,x
+169
+86
+A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+interstellar
+MOVIE 
+American Psycho
+2000
+Christian Bale,Willem Dafoe,Jared Leto,x
+Mary Harron,x
+Crime,Drama,Horror,x
+102
+76
+A wealthy New York City investment banking executive, Patrick Bateman, hides his alternate psychopathic ego from his co-workers and friends as he delves deeper into his violent, hedonistic fantasies.
+american_psycho
+MOVIE 
+John Wick
+2014
+Keanu Reeves,Michael Nyqvist,Willem Dafoe,x
+Chad Stahelski,David Leitch,x
+Action,Crime,x
+101
+74
+An ex-hit-man comes out of retirement to track down the gangsters that killed his dog and took his car.
+john_wick
+MOVIE 
+The Mask
+1994
+Jim Carrey,Cameron Diaz,Peter Riegert,x
+Chuck Russell,x
+Action,Crime,Comedy,x
+101
+69
+Bank clerk Stanley Ipkiss is transformed into a manic superhero when he wears a mysterious mask.
+the_mask
+MOVIE 
+The Matrix
+1999
+Keanu Reeves,Laurence Fishburne,Carrie-Anne Moss,x
+Lana Wachowski,Lilly Wachowski,x
+Action,Sci-Fi,x
+136
+87
+When a beautiful stranger leads computer hacker Neo to a forbidding underworld,he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.
+the_matrix
+MOVIE 
+The Truman Show
+1998
+Jim Carrey,Ed Harris,Laura Linney,x
+Peter Weir,x
+Action,Drama,Comedy,x
+103
+82
+An insurance salesman discovers his whole life is actually a reality TV show.
+the_truman_show
+MOVIE 
+Seven
+1995
+Morgan Freeman,Brad Pitt,Kevin Spacey,x
+David Fincher,x
+Crime,Drama,x
+127
+86
+Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.
+seven

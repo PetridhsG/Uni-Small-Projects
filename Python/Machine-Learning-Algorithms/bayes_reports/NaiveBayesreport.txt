@@ -1,0 +1,23 @@
+Features:1000
+Data Length:1000 of total 25000.
+Data Percentage:4.0%.
+
+Training Metrics for NaiveBayes:
+              precision    recall  f1-score   support
+
+           0       0.53      0.65      0.58       493
+           1       0.56      0.43      0.49       507
+
+    accuracy                           0.54      1000
+   macro avg       0.54      0.54      0.53      1000
+weighted avg       0.54      0.54      0.53      1000
+
+Testing Metrics for NaiveBayes:
+              precision    recall  f1-score   support
+
+           0       0.58      0.66      0.62       479
+           1       0.64      0.56      0.60       521
+
+    accuracy                           0.61      1000
+   macro avg       0.61      0.61      0.61      1000
+weighted avg       0.61      0.61      0.61      1000

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Learning Hub | Py Game</title>
+        <link href="..\img\logos\logo-icon.png" rel="shortcut icon" type="image/png" />
+        <link href="..\style\style.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        
+    </head>
+
+    <body>
+        <header>          
+                <a href="index.html"><img src="..\img\logos\header-logo.png" alt="Learning Hub"></a>         
+        </header>
+        
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="categories.html">Courses</a>
+                </li>
+                <li>
+                    <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="sign-up.html">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+
+        <aside>
+            <form>
+                <label>Subscribe to our Newsletter:</label>
+                <input placeholder="someone@example.com" >
+            </form>
+            <button>Subscribe</button>
+            
+            <h3>Want to send us an email?</h3>
+            <div id="contact-us-btn">
+                <a href="mailto:contact@example.com">Contact </a>
+            </div>
+
+            <a href="https://shorturl.at/bcZfm" target="_blank"><img src="..\img\coursera-ad.png"></a>  
+
+
+        </aside>
+
+        <main>          
+            <section class="book-lecture-intro">
+                <div class="center-content"><a href="python.html" class="return-button">&#8592 Return</a></div>
+                <div class="book-lecture-item">
+                    
+                    <img src="..\img\courses\python\games-python.jpg">
+                    <div class="details-container">
+                        <h3>Invent Your Own Computer Games with Python, 4th Edition</h3>
+                        <h5>by Al Sweigart</h5>
+                        <p>
+                            Invent Your Own Computer Games with Python teaches you how to program in the Python language.
+                            Each chapter gives you the complete source code for a new game, and then teaches the programming
+                            concepts from the examples. Games include Guess the Number, Hangman, Tic Tac Toe, and Reversi.
+                            This book also has an introduction to making games with 2D graphics using the Pygame framework.
+                        </p>
+                        <p>4.7 <span class="stars">&#9733</span> (510)</p>
+                        <p>376 pages</p>
+                        <p>Published Date: Dec. 2016</p>
+                        <div id="table-of-content">
+                            <table cellpadding="8" cellspacing="0">
+                                <tr>
+                                    <th>Chapter</th>
+                                    <th>Title</th>
+                                </tr>
+                                <tr>
+                                    <td>Chapter 1</td>
+                                    <td><a href="#pychapter1">The Interactive Shell</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Chapter 2</td>
+                                    <td><a href="#pychapter2">Writing Programs</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Chapter 3</td>
+                                    <td><a href="#pychapter3">Guess the Number</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Chapter 4</td>
+                                    <td><a href="#pychapter4">A Joke-Telling Program</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Chapter 5</td>
+                                    <td><a href="#pychapter5">Dragon Realm</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                         
+                    
+                </div>  
+            </section>
+
+            <div class="book-lecture-chapters-container">
+                <section id="pychapter1" class="book-lecture-chapter ">
+                    <h2 >1. The Interactive Shell</h2>
+                    
+                    <details>
+                        <summary>TOPICS COVERED IN THIS CHAPTER</summary>
+                        <ul>
+                            <li>Operators</li>
+                            <li>Integers and floating-point numbers</li>
+                            <li>Values</li>
+                            <li>Expressions</li>
+                            <li>Syntax errors</li>
+                            <li>Storing values in variables</li>
+                        </ul>
+                    </details>
+                    <h3>Some Simple Math</h3>
+                    <p>
+                        Start IDLE by following the steps in “Starting IDLE” on page xxvi. First you’ll
+                        use Python to solve some simple math problems. The interactive shell can work 
+                        just like a calculator. Type 2 + 2 into the interactive shell at the >>> prompt 
+                        and press ENTER. (On some keyboards, this key is RETURN.) Figure 1-1 shows how 
+                        this math problem looks in the interactive shell—notice that it responds with the number 4.
+                    </p>
+                    <figure>
+                        <img src="..\\img\courses\python\python-book\py-chapter1.jpeg">
+                        <figcaption>Figure 1-1: Entering 2 + 2 into the interactive shell</figcaption>
+                    </figure>
+                    <a href="#table-of-content" class="back-to-table-button " >Back To Table Of Content</a>
+                </section>
+
+                <section id="pychapter2" class="book-lecture-chapter">
+                    <h2>2. Writing Programs</h2>
+                    <details>
+                        <summary>TOPICS COVERED IN THIS CHAPTER</summary>
+                        <ul>
+                            <li>Strings</li>
+                            <li>String concatenation</li>
+                            <li>Data types (such as strings or integers)</li>
+                            <li>Using the file editor to write programs</li>
+                            <li>Saving and running programs in IDLE</li>
+                            <li>Flow of execution</li>
+                            <li>Comments</li>
+                            <li>The <code>print()</code> function</li>
+                            <li>The <code>input()</code> function</li>
+                            <li>Case sensitivity</li>
+                        </ul>
+                    </details>
+                    <h3>Saving Your Program</h3>
+                    <p>
+                        Once you’ve entered your source code, save it by clicking File image Save As. 
+                        Or press CTRL-S to save with a keyboard shortcut. Figure 2-4 shows the Save As
+                        window that will open. Enter hello.py in the File name text field and then click Save.
+                    </p>
+                    <figure>
+                        <img src="..\\img\courses\python\python-book\py-chapter2.jpeg">
+                        <figcaption>Figure 2-4: Saving the program</figcaption>
+                    </figure>
+                    <a href="#table-of-content" class="back-to-table-button">Back To Table Of Content</a>
+                </section>
+
+                <section id="pychapter3" class="book-lecture-chapter">
+                    <h2>3. Guess The Number</h2>
+                    <details>
+                        <summary>TOPICS COVERED IN THIS CHAPTER</summary>
+                        <ul>
+                            <li>import statements</li>
+                            <li>Modules</li>
+                            <li>The <code>randint()</code> function</li>
+                            <li><code>for</code> statements</li>
+                            <li>Blocks</li>
+                            <li>The <code>str()</code>, <code>int()</code>, and <code>float()</code> functions</li>
+                            <li>Booleans</li>
+                            <li>Comparison operators</li>
+                            <li>Conditions</li>
+                            <li>The difference between <code>=</code> and <code>==</code></li>
+                            <li><code>if</code> statements</li>
+                            <li><code>break</code> statements</li>
+                        </ul>
+                    </details>
+                    <h3>Grouping with Blocks</h3>
+                    <p>
+                        Several lines of code can be grouped together in a block. Every line in a block of code
+                        begins with at least the number of spaces as the first line in the block. You can tell 
+                        where a block begins and ends by looking at the number of spaces at the front of the lines. 
+                        This is the line’s indentation. Python programmers typically use four additional spaces of
+                        indentation to begin a block. Any following line that’s indented by that same amount is part
+                        of the block. The block ends when there’s a line of code with the same indentation as before
+                        the block started. There can also be blocks within other blocks. Figure 3-1 shows a code diagram
+                        with the blocks outlined and numbered.
+                    </p>
+                    <figure>
+                        <img src="..\\img\courses\python\python-book\py-chapter3.jpeg">
+                        <figcaption>Figure 3-1: An example of blocks and their indentation. The gray dots represent spaces.</figcaption>
+                    </figure>
+                    <a href="#table-of-content" class="back-to-table-button">Back To Table Of Content</a>
+                </section>
+
+                <section id="pychapter4" class="book-lecture-chapter">
+                    <h2>4. A Joke-Telling Program</h2>
+                    <details>
+                        <summary>TOPICS COVERED IN THIS CHAPTER</summary>
+                        <ul>
+                            <li>Escape characters</li>
+                            <li>Using single quotes and double quotes for strings</li>
+                            <li>Using <code> print()’s</code> end keyword parameter to skip newlines</li>  
+                        </ul>
+                    </details>
+                    <h3>Source Code for Jokes</h3>
+                    <p>
+                        Open a new file editor window by clicking File image New Window. In the blank window that appears, 
+                        enter the source code and save it as jokes.py. Then run the program by pressing F5.
+                    </p>
+                    <figure>
+                        <img src="..\\img\courses\python\python-book\py-chapter4.png">
+                        <figcaption>jokes.py</figcaption>
+                    </figure>
+                    <a href="#table-of-content" class="back-to-table-button">Back To Table Of Content</a>
+                </section>
+
+                <section id="pychapter5" class="book-lecture-chapter">
+                    <h2>5. Dragon Realm</h2>
+                    <details>
+                        <summary>TOPICS COVERED IN THIS CHAPTER</summary>
+                        <ul>
+                            <li>Flowcharts</li>
+                            <li>Creating your own functions with the <code>def</code> keyword</li>
+                            <li>Multiline strings</li>
+                            <li><code>while</code> statements</li>
+                            <li>The <code>and</code>, <code>or</code>, and <code>not</code> Boolean operators</li>
+                            <li>Truth tables</li>
+                            <li>The <code>return</code> keyword</li>
+                            <li>Global and local variable scope</li>
+                            <li>Parameters and arguments</li>
+                            <li>The <code>sleep()</code> function</li>
+                        </ul>
+                    </details>
+                    <h3>Flowchart for Dragon Realm</h3>
+                    <p>
+                        It often helps to write down everything you want your game or program to do before you start
+                        writing code. When you do this, you are designing the program.For example, it may help to draw
+                        a flowchart. A flowchart is a diagram that shows every possible action that can happen in the game
+                        and which actions are connected. Figure 5-1 is a flowchart for Dragon Realm.To see what happens in
+                        the game, put your finger on the START box. Then follow one arrow from that box to another box. 
+                        Your finger is like the program execution. The program terminates when your finger lands on the END box.
+                    </p>
+                    <figure>
+                        <img src="..\\img\courses\python\python-book\py-chapter5.jpeg">
+                        <figcaption>Figure 5-1: Flowchart for the Dragon Realm game</figcaption>
+                    </figure>
+                    <a href="#table-of-content" class="back-to-table-button">Back To Table Of Content</a>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <section id="contact">
+                <h2>Contact Us</h2>   
+                <div id="contact-info">    
+                    <div class="contact-info-item">
+                        <h3>Petridis Giannis</h3>
+                        <p>
+                            <a href="mailto:p3210167@aueb.gr">
+                                <img srcset="../img/responsive-img/200px/logos/mail-logo.png 240w,
+                                            ../img/responsive-img/300px/logos/mail-logo.png 320w,
+                                            ../img/responsive-img/500px/logos/mail-logo.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                            (max-width: 760px) 50vw,
+                                            380px 
+                                            " 
+                                    src="../img/responsive-img/200px/logos/mail-logo.png 240w"
+                                    alt="Mail-logo"  > 
+                                p3210167@aueb.gr
+                            </a>
+                            <a href="https://github.com/PetridhsG"> 
+                                <img srcset="../img/responsive-img/200px/logos/github-logo.png 240w,
+                                            ../img/responsive-img/300px/logos/github-logo.png 320w,
+                                            ../img/responsive-img/500px/logos/github-logo.png 765w"
+                                        sizes="(max-width: 320px) 100vw,
+                                        (max-width: 760px) 50vw,
+                                        380px  
+                                        " 
+                                    src="../img/responsive-img/200px/logos/github-logo.png 240w"
+                                    alt="Github-logo"  > 
+                                PetridhsG
+                            </a>
+                        </p>  
+                    </div>   
+                    <div class="contact-info-item">   
+                        <h3>Kefalas Dimitris</h3>
+                        <p>
+                            <a href="mailto:p3210167@aueb.gr">
+                                <img srcset="../img/responsive-img/200px/logos/mail-logo.png 240w,
+                                            ../img/responsive-img/300px/logos/mail-logo.png 320w,
+                                            ../img/responsive-img/500px/logos/mail-logo.png 765w"
+                                        sizes="(max-width: 320px) 100vw,
+                                        (max-width: 760px) 50vw,
+                                        380px  
+                                        "
+                                    src="../img/responsive-img/200px/logos/mail-logo.png 240w"
+                                    alt="Mail-logo"  > 
+                                p3210075@aueb.gr
+                            </a>
+                            <a href="https://github.com/dimkef29"> 
+                                <img srcset="../img/responsive-img/200px/logos/github-logo.png 240w,
+                                            ../img/responsive-img/300px/logos/github-logo.png 320w,
+                                            ../img/responsive-img/500px/logos/github-logo.png 765w"
+                                        sizes="(max-width: 320px) 100vw,
+                                        (max-width: 760px) 50vw,
+                                        380px  
+                                        "
+                                    src="../img/responsive-img/200px/logos/github-logo.png 240w"
+                                    alt="Github-logo"  > 
+                                dimkef29
+                            </a>
+                        </p>  
+                    </div>        
+                </div>                 
+            </section>
+
+            <section id="partners"> 
+                <h2>Partners</h2>
+                <div id="partners-logos">
+                    <a href="https://www.aueb.gr/"  target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/partners/aueb.png 240w,
+                                    ../img/responsive-img/300px/partners/aueb.png 320w,
+                                    ../img/responsive-img/500px/partners/aueb.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/partners/aueb.png 240w"
+                                    alt="Aueb-logo"  > 
+                    </a>
+                    <a href="https://www.stanford.edu/" target="_blank">
+                        <img srcset="../img/responsive-img/200px/partners/stanford.png 240w,
+                                    ../img/responsive-img/300px/partners/stanford.png 320w,
+                                    ../img/responsive-img/500px/partners/stanford.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/partners/stanford.png 240w"
+                                    alt="Stanford-logo"  > 
+                    </a>
+                    <a href="https://www.mit.edu/" target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/partners/mit.png 240w,
+                                    ../img/responsive-img/300px/partners/mit.png 320w,
+                                    ../img/responsive-img/500px/partners/mit.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/partners/mit.png 240w"
+                                    alt="MIT-logo"  > 
+                    </a>
+                    <a href="https://ntua.gr/el/" target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/partners/emp.png 240w,
+                                    ../img/responsive-img/300px/partners/emp.png 320w,
+                                    ../img/responsive-img/500px/partners/emp.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/partners/emp.png 240w"
+                                    alt="EMP-logo"  > 
+                    </a>
+                </div>            
+            </section>
+
+            <section id="social-media">
+                <h2>Social Media</h2>
+                <div id="media-logos">
+                    <a href="https://shattereddisk.github.io/rickroll/rickroll.mp4" target="_blank">
+                        <img srcset="../img/responsive-img/200px/logos/yt.png 240w,
+                                    ../img/responsive-img/300px/logos/yt.png 320w,
+                                    ../img/responsive-img/500px/logos/yt.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/logos/yt.png 240w"
+                                    alt="YT-logo"  > 
+                    </a>
+                    <a href="https://x.com/" target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/logos/x.png 240w,
+                                    ../img/responsive-img/300px/logos/x.png 320w,
+                                    ../img/responsive-img/500px/logos/x.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/logos/x.png 240w"
+                                    alt="X-logo"  > 
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/logos/insta.png 240w,
+                                    ../img/responsive-img/300px/logos/insta.png 320w,
+                                    ../img/responsive-img/500px/logos/insta.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/logos/insta.png 240w"
+                                    alt="Insta-logo"  > 
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/logos/fb.png 240w,
+                                    ../img/responsive-img/300px/logos/fb.png 320w,
+                                    ../img/responsive-img/500px/logos/fb.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/logos/fb.png 240w"
+                                    alt="Fb-logo"  > 
+                    </a>
+                    <a href="https://discord.com/" target="_blank"> 
+                        <img srcset="../img/responsive-img/200px/logos/disc.png 240w,
+                                    ../img/responsive-img/300px/logos/disc.png 320w,
+                                    ../img/responsive-img/500px/logos/disc.png 765w"
+                                    sizes="(max-width: 320px) 100vw,
+                                    (max-width: 760px) 50vw,
+                                    380px  
+                                    "
+                                    src="../img/responsive-img/200px/logos/disc.png 240w"
+                                    alt="Discord-logo"  >
+                    </a>    
+                </div>     
+                <h5>&#169;2024, AUEB Project. All Rights Reserved.</h5>
+            </section>          
+        </footer>
+    </body>
+</html>
