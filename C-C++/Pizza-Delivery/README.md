@@ -1,17 +1,53 @@
 
-# Pizza Delivery
-## This app implements the logic of a pizza delivery service, using threads and synchronization
+# Pizza Delivery System
 
-In the "config.h" file, you can find the declarations of program constants according to the specifications. In the "pizzeria.c" file, initially, all the required includes and declarations of necessary variables, mutexes, and condition variables are present.
+This project implements a **multi-threaded pizza delivery system** using **POSIX threads (pthreads)**. The system processes customer orders, prepares, bakes, packages, and delivers pizzas while ensuring proper **synchronization** using **mutexes and condition variables**.
 
-Two functions are used: "main" and "order." The "main" function takes the number of customers (Ncust) and a seed for generating random numbers as arguments. Then, it initializes mutexes and condition variables and creates and connects exactly Ncust threads, passing their unique IDs as arguments. Finally, it destroys the mutexes and condition variables and displays the order statistics.
+## Project Structure
 
-The "order" function takes the customer's ID as an argument. It initializes the necessary variables and calculates the number of special and plain pizzas the customer will order, as well as the entry and payment times for the order. If the order fails, the thread terminates its operation. If not, it continues by calculating some statistics for the order, and the order is ready to be prepared.
+The project consists of the following files:
 
-For each stage of the order, there is a timer, a mutex, and a condition variable. The timer calculates the time from the beginning to the end of the stage, the mutex locks the critical section where available resources are modified, and the condition variable signals and waits for when a resource is available. Sleep functions are used in between to simulate the time for each stage.
+- **`config.h`**: Defines constants for the simulation.
+- **`pizzeria.c`**: Implements the main logic of the pizza delivery system.
+- **`test_res.sh`**: A shell script to compile and run the project.
+- **`README.md`**: Documentation for the project.
 
-After all stages of the order are completed, some useful statistics are calculated, and finally, the space allocated for the customer's ID is released, and the thread terminates its operation.
+##  How It Works
 
-## Run the project
-This project can only be run in Unix systems that have pthread library installed.
-To run this, just run the test_res.sh file.
+1. **Initialization**
+   - Reads `Ncust` (number of customers) and a **random seed** from the command line.
+   - Initializes mutexes, condition variables, and necessary resources.
+   - Creates **Ncust threads**, one for each customer.
+
+2. **Order Processing**
+   - Each thread represents a customer placing an order.
+   - The number of pizzas (plain/special) is determined randomly.
+   - The order is either **approved** or **rejected** (based on a probability of failure).
+   - If successful, the order proceeds through **preparation, baking, packaging, and delivery**.
+
+3. **Synchronization**
+   - **Mutexes** lock critical sections where resources (cooks, ovens, packers, delivery personnel) are allocated.
+   - **Condition variables** ensure proper **waiting and signaling** when resources become available.
+
+4. **Order Stages & Timers**
+   - **Preparation (`Tprep`)**
+   - **Baking (`Tbake`)**
+   - **Packaging (`Tpack`)**
+   - **Delivery (`Tdellow` - `Tdelhigh`)**
+   - Each stage is **simulated with sleep()** and tracked using **timers**.
+
+5. **Statistics**
+   - Total revenue, order success/failure counts.
+   - Average & maximum **service time** (from order to delivery).
+   - Average & maximum **cooling time** (baking to delivery).
+
+## Running the Project
+
+### Prerequisites
+- A **Unix-based system** with **pthreads** installed.
+
+### Compilation & Execution
+To compile and run the project, use the provided shell script:
+
+```sh
+./test_res.sh
